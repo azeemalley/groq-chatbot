@@ -1,50 +1,56 @@
-🤖 Groq Multi‑Personality Chatbot
-An AI-powered chatbot web app built with Streamlit and the Groq Cloud API.
-This chatbot allows users to select from multiple Groq models and personalities, ensuring domain‑specific answers and polite refusals for off‑topic queries.
+# 🤖 Groq Multi‑Personality Chatbot  
 
-🌍 Live Demo: Try the Chatbot Here
-📂 Source Code: GitHub Repository
+An AI-powered chatbot built using **Python**, **Streamlit**, and the **Groq Cloud API**.  
 
-✨ Features
-🔹 Multiple Groq Models Supported
+This app allows users to choose from different AI models, switch between multiple chatbot personalities, and ensures that each personality stays within its domain — politely refusing off-topic queries.  
 
-llama-3.1-8b-instant (fast, lightweight)
-llama-3.1-70b-versatile (balanced, more capable)
-gemma-7b-it (instruction-tuned model)
-🔹 Personality Modes
+---
 
-🧮 Math Teacher → Only answers math questions
-🩺 Doctor → Only health & medical queries
-🌍 Travel Guide → Only travel tips/suggestions
-👨‍🍳 Chef → Only cooking & recipe queries
-💻 Tech Support → Only troubleshooting/IT help
-🔹 Polite Behavior
+🌍 **Live Demo**  
+👉 [Click here to try the chatbot](https://groq-chatbot-g6pn576ry9erg9vlzvenae.streamlit.app/)  
 
-Greets naturally (“Hi”, “Hello”)
-Politely refuses irrelevant queries (“🙏 Sorry, I can only answer math-related questions.”)
-🔹 Session Memory → Maintains conversation during an active session
+📂 **Source Code**  
+👉 [GitHub Repository](https://github.com/azeemalley/groq-chatbot)  
 
-🔹 Deployed on Streamlit Cloud → Free public hosting
+---
 
-🛠️ Tech Stack
-Python 3.9+
-Streamlit → Web UI framework
-Groq Cloud API → LLaMA 3 & Gemma models
-Hosting: Deployed free on Streamlit Cloud
-## 💻 Run Locally
+## ✨ Features  
+
+- 🔹 **Multi‑Model Support** → Choose from `llama-3.1-8b-instant`, `llama-3.1-70b-versatile`, and `gemma-7b-it`  
+- 🔹 **Personality Selector** → Switch between:  
+  - 🧮 Math Teacher  
+  - 🩺 Doctor  
+  - 🌍 Travel Guide  
+  - 👨‍🍳 Chef  
+  - 💻 Tech Support  
+- 🔹 **Polite Behavior** → Responds politely to greetings (*“hi”, “hello”*) and declines out-of-domain questions  
+- 🔹 **Session Memory** → Maintains history during the chat session  
+- 🔹 **Deployed Online** → Hosted on Streamlit Cloud for free, public access  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Python**  
+- **Streamlit** → Web App UI  
+- **Groq API** → LLaMA & Gemma Large Language Models  
+- **Streamlit Cloud** → Deployment  
+
+---
+
+## 💻 Run Locally  
 
 ```bash
-# Clone repo
+# Clone the repo
 git clone https://github.com/azeemalley/groq-chatbot.git
 cd groq-chatbot
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Set your Groq API Key
+# Set your Groq API key
 setx GROQ_API_KEY "your-groq-api-key"    # Windows
 export GROQ_API_KEY="your-groq-api-key" # Mac/Linux
 
-# Run Streamlit app
+# Run the app
 streamlit run app.py
-Then open 👉 http://localhost:8501
